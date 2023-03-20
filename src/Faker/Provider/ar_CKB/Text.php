@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider\en_US;
+namespace Faker\Provider\ar_CKB;
 
 class Text extends \Faker\Provider\Text
 
