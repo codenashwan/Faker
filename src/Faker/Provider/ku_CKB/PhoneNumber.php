@@ -5,6 +5,9 @@ namespace Faker\Provider\ar_CKB;
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 
 {
+    /**
+     * @see https://en.wikipedia.org/wiki/Telephone_numbers_in_Iraq
+     */
     protected static $formats = [
         '+964 770 ### ####',
         '+964 771 ### ####',
