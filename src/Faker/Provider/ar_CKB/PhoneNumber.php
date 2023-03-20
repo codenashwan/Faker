@@ -3,6 +3,7 @@
 namespace Faker\Provider\en_US;
 
 class PhoneNumber extends \Faker\Provider\PhoneNumber
+
 {
     /**
      * @var array<int, string>
@@ -19,60 +20,60 @@ class PhoneNumber extends \Faker\Provider\PhoneNumber
     ];
 
     /**
-     * @see https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers#United_States.2C_Canada.2C_and_other_NANP_countries
+     * @see https://en.wikipedia.org/wiki/Telephone_numbers_in_Iraq
      */
     protected static $formats = [
         // International format
-        '+1-{{areaCode}}-{{exchangeCode}}-####',
-        '+1 ({{areaCode}}) {{exchangeCode}}-####',
-        '+1-{{areaCode}}-{{exchangeCode}}-####',
-        '+1.{{areaCode}}.{{exchangeCode}}.####',
-        '+1{{areaCode}}{{exchangeCode}}####',
+        '+964-{{areaCode}}-{{exchangeCode}}-####',
+        '+964 ({{areaCode}}) {{exchangeCode}}-####',
+        '+964-{{areaCode}}-{{exchangeCode}}-####',
+        '+964.{{areaCode}}.{{exchangeCode}}.####',
+        '+964{{areaCode}}{{exchangeCode}}####',
 
         // Standard formats
         '{{areaCode}}-{{exchangeCode}}-####',
         '({{areaCode}}) {{exchangeCode}}-####',
-        '1-{{areaCode}}-{{exchangeCode}}-####',
+        '964-{{areaCode}}-{{exchangeCode}}-####',
         '{{areaCode}}.{{exchangeCode}}.####',
 
         '{{areaCode}}-{{exchangeCode}}-####',
         '({{areaCode}}) {{exchangeCode}}-####',
-        '1-{{areaCode}}-{{exchangeCode}}-####',
+        '964-{{areaCode}}-{{exchangeCode}}-####',
         '{{areaCode}}.{{exchangeCode}}.####',
     ];
 
     protected static $formatsWithExtension = [
         '{{areaCode}}-{{exchangeCode}}-#### x###',
         '({{areaCode}}) {{exchangeCode}}-#### x###',
-        '1-{{areaCode}}-{{exchangeCode}}-#### x###',
+        '964-{{areaCode}}-{{exchangeCode}}-#### x###',
         '{{areaCode}}.{{exchangeCode}}.#### x###',
 
         '{{areaCode}}-{{exchangeCode}}-#### x####',
         '({{areaCode}}) {{exchangeCode}}-#### x####',
-        '1-{{areaCode}}-{{exchangeCode}}-#### x####',
+        '964-{{areaCode}}-{{exchangeCode}}-#### x####',
         '{{areaCode}}.{{exchangeCode}}.#### x####',
 
         '{{areaCode}}-{{exchangeCode}}-#### x#####',
         '({{areaCode}}) {{exchangeCode}}-#### x#####',
-        '1-{{areaCode}}-{{exchangeCode}}-#### x#####',
+        '964-{{areaCode}}-{{exchangeCode}}-#### x#####',
         '{{areaCode}}.{{exchangeCode}}.#### x#####',
     ];
 
     protected static $e164Formats = [
-        '+1{{areaCode}}{{exchangeCode}}####',
+        '+964{{areaCode}}{{exchangeCode}}####',
     ];
 
     /**
      * @see https://en.wikipedia.org/wiki/Toll-free_telephone_number#United_States
      */
     protected static $tollFreeAreaCodes = [
-        800, 844, 855, 866, 877, 888,
+        770, 750, 773, 771, 751,
     ];
     protected static $tollFreeFormats = [
         // Standard formats
         '{{tollFreeAreaCode}}-{{exchangeCode}}-####',
         '({{tollFreeAreaCode}}) {{exchangeCode}}-####',
-        '1-{{tollFreeAreaCode}}-{{exchangeCode}}-####',
+        '964-{{tollFreeAreaCode}}-{{exchangeCode}}-####',
         '{{tollFreeAreaCode}}.{{exchangeCode}}.####',
     ];
 

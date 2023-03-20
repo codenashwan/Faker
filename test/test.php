@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 require __DIR__ . '/../vendor/autoload.php';
 $faker = Faker\Factory::create();
 $faker->seed(5);
@@ -11,7 +14,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
     <phone number="<?php echo $faker->phoneNumber; ?>"/>
 <?php if ($faker->boolean(25)): ?>
     <birth date="<?php echo $faker->dateTimeThisCentury->format('Y-m-d'); ?>" place="<?php echo $faker->city; ?>"/>
-<?php endif; ?>
+<?php endif;?>
     <address>
       <street><?php echo $faker->streetAddress; ?></street>
       <city><?php echo $faker->city; ?></city>
@@ -21,10 +24,10 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
     <company name="<?php echo $faker->company; ?>" catchPhrase="<?php echo $faker->catchPhrase; ?>">
 <?php if ($faker->boolean(33)): ?>
       <offer><?php echo $faker->bs; ?></offer>
-<?php endif; ?>
+<?php endif;?>
 <?php if ($faker->boolean(33)): ?>
       <director name="<?php echo $faker->name; ?>" />
-<?php endif; ?>
+<?php endif;?>
     </company>
 <?php if ($faker->boolean(15)): ?>
     <details>
@@ -32,7 +35,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <?php echo $faker->text(400); ?>
 ]]>
     </details>
-<?php endif; ?>
+<?php endif;?>
   </contact>
-<?php endfor; ?>
+<?php endfor;?>
 </contacts>
